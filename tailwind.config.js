@@ -1,25 +1,20 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+// import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
+
+export default {
   content: [
-    "./src/app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./lib/**/*.{ts,tsx}",
+    "./styles/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: "#eff6ff",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-        },
-        secondary: {
-          500: "#10b981",
-          600: "#059669",
-        },
-      },
-      fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
+        border: "#e5e7eb", // Light gray (customize as needed)
+        background: "#ffffff", // White (customize as needed)
+        foreground: "#111827", // Dark (customize as needed)
       },
     },
   },
